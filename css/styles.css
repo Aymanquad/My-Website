@@ -1,17 +1,23 @@
 body{
     background-color: C0DEFF;
     margin-top: 0;
-    margin-left: 0;
+    margin-left: -40px;
     margin-right: 0;
     text-align: center;
     font-family: 'Lora', serif;
     font-size: 25px;
+    display: block;
+    contain: content;
 }
 hr{
     border: dotted #678983 6px;
     border-bottom: 0;
     width: 5%;
     margin: 80px auto;
+}
+.h2_2nd{
+    font-family: 'Courgette', cursive;
+    font-size: 90%;
 }
 h1{
     margin: 20px;
@@ -22,15 +28,15 @@ h1{
 h2{
     font-family: 'Courgette', cursive;
     font-weight: normal;
+    width: 100%;
 }
 h3{
     font-family: 'Roboto', sans-serif;
     color: 16213E;
 }
-#2ndpart{
-    font-family: 'Courgette', cursive;
-    font-size: 10px;
-}
+
+
+
 .pro{
     text-decoration: underline;
 }
@@ -41,12 +47,18 @@ h3{
 };
 .middle-container{
    background-color: aliceblue;
+   align-content: center;
 }
 .bottom-container{
     background-color: 62B6B7;
+    padding-left: 10%;
 }
 .last-part{
     margin-bottom: 0;
+}
+.mountain{
+    position: relative;
+    width: 100%;
 }
 .clouds{
     height: 70px;
@@ -54,27 +66,44 @@ h3{
 }
 .bottom-cloud{
     position: absolute;
-    left: 400px;
+    padding-left: 60%;
 }
 .top-cloud{
     position: absolute;
-    right: 280px;
+    right: 60%;
     top: 20px;
 }
 .my-img{
-    height: 400px;
-    width: 400px;
+    height: 37%;
+    width: 34%;
     border-style: double;
     border-radius: 90%;
     border-color: black;
 }
-.skill-data1{
+
+.comp_gif{
     display: inline-block;
-    margin: 20px;
+    margin: 10px;
+}
+.skill-data1{
+    padding-left: 10%;
+    display: inline-block;
+    margin: 10px;
 }
 .skill-data2{
+    padding-left: 10%;
     display: inline-block;
     margin: 30px;
+}
+.foot_img{
+    display: inline-block;
+    margin: 30px;
+}
+.contact-me{
+    padding-left: 10%;
+}
+.profile{
+    padding-left: 10%;
 }
 
 .btn {
@@ -130,3 +159,31 @@ h3{
     background-image: linear-gradient(to bottom, #6FB2D2, #434242);
     text-decoration: none;
   }
+
+
+@media screen and (max-width : 600px){
+    body{
+        object-fit: fill;
+    };
+    .top{
+        background-color: 62B6B7;
+        position: absolute;
+        left : 40px;
+        margin-left: 0px;
+        padding-top: 15px;
+        object-fit: contain;
+    };
+    
+    h1{
+        margin: 20px;
+        padding-top: 12%;
+        font-family: 'Passions Conflict', cursive;
+        font-size: 50%;
+        position: absolute;
+    }
+    .bottom-cloud{
+        position: absolute;
+        left: 40px;
+    };
+    
+}
